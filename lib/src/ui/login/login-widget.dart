@@ -76,7 +76,7 @@ class _LoginWidgetState extends State<LoginWidget> {
         return RaisedButton(
           child: Text('Entrar'),
           color: Colors.blue,
-          onPressed: snapshot.hasData //&& snapshot.data == true
+          onPressed: snapshot.hasData
               ? snapshot.data == true
                   ? () => Navigator.pushNamed(context, "/registro")
                   : () => Navigator.popAndPushNamed(context, "/").whenComplete(
